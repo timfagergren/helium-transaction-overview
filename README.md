@@ -24,6 +24,7 @@ Example:
 git clone https://github.com/timfagergren/helium-transaction-overview.git
 cd helium-transaction-overview
 pip install -r requirements.txt
+## Replace with your account_id, don't use this one
 python main.py 13jFKYu3ywLHzJxdTMDENqnutTo5cEdLs8cQGYeatQSkhWYbDUc 2020
 ```
 
@@ -38,7 +39,7 @@ Results are stored in .csv files within the same directory. To re-pull fresh in 
 .csv files and start fresh.
 
 * The first file created is `reward_activity_original.csv`, which is the direct results from the Helium API relating to your hotspot(s).
-* The second file created is `reward_activity_with_dollar_per_block`, which is a copy of `reward_activity_original.csv`
+* The second file created is `reward_activity_with_dollar_per_block.csv`, which is a copy of `reward_activity_original.csv`
  but appended to it the dollar values
  
 The second process of assigning the dollar values per block definitely takes much longer.
